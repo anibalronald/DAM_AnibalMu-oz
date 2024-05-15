@@ -9,4 +9,5 @@
     <string name="Checkbox_Internet">Internet</string>
     <string name="Checkbox_Amigo">Amigo</string>
     <string name="Checkbox_Publicidad">Publicidad</string>
+    <string name="button_enviar">Enviar</string>
 </resources>

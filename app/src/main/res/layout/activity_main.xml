@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BCFF9F13"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,6 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="#2196F3"
+        android:backgroundTint="#2196F3"
         android:text="EXAMEN DE ADMISION 2024"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="#2196F3"
         android:text="Formulario de registro"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -31,7 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
+        android:background="#2373B3"
         android:text="Apellidos y Nombre:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -41,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#2373B3"
         android:text="Correo Electrónico:"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="0.0"
@@ -52,6 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#2373B3"
         android:text="Clave:"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,6 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:background="#2373B3"
         android:text="Fecha de Nacimiento:"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.0"
@@ -74,46 +82,65 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#2373B3"
         android:text="Carrera:"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#2373B3"
+        android:text="¿Por qué medio se enteró de la convocatoria?"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupCarrera"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupCarrera" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
         android:layout_marginStart="48dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="148dp"
+        android:layout_height="37dp"
         android:layout_marginStart="52dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.555" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="148dp"
+        android:layout_height="38dp"
         android:layout_marginStart="136dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.722" />
@@ -123,10 +150,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:inputType="date"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.388" />
@@ -137,6 +166,8 @@
         android:layout_height="182dp"
         android:layout_marginStart="-150dp"
         android:layout_marginTop="5dp"
+        android:background="#C32373B3"
+        android:backgroundTint="#C32373B3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
@@ -165,5 +196,66 @@
             android:layout_height="wrap_content"
             android:text="@string/radioButton_Administracion" />
     </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/CheckboxRadio"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Checkbox_radio"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <CheckBox
+        android:id="@+id/CheckboxInternet"
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Checkbox_Internet"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/CheckboxRadio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CheckboxRadio"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxRadio" />
+
+    <CheckBox
+        android:id="@+id/CheckboxAmigo"
+        android:layout_width="78dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Checkbox_Amigo"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/CheckboxInternet"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CheckboxInternet"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxInternet" />
+
+    <CheckBox
+        android:id="@+id/CheckboxPublicidad"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Checkbox_Publicidad"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/CheckboxAmigo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CheckboxAmigo"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxAmigo" />
+
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#2373B3"
+        android:backgroundTint="#2373B3"
+        android:text="@string/button_enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxPublicidad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
